@@ -1,6 +1,6 @@
 # RSG2prior data/code
 
-## "Bayesian Computation through Cortical Latent Dynamics", Sohn H*, Narain D*, Meirhaeghe N*, Jazayeri M , Neuron (2019)
+### ["Bayesian Computation through Cortical Latent Dynamics", Sohn H*, Narain D*, Meirhaeghe N*, Jazayeri M , Neuron (2019)](https://www.sciencedirect.com/science/article/pii/S0896627319305628)
 
 ### Folder structure is as follows:
 ```
