@@ -3,7 +3,7 @@
 ## Bayesian Computation through Cortical Latent Dynamics, Sohn et al., Neuron (2019)
 
 This folder has neural data, spike times, for each session.
-
+```
 |-- RSG2prior/data
 |   |-- behavior/
 |       |-- H_RSGprior_DMFC.mat
@@ -13,11 +13,11 @@ This folder has neural data, spike times, for each session.
 |       |-- processed_data
 |       |-- PSTH
 |       |-- raster
-
-=========================================================
-======================== DETAILS ========================
-=========================================================
+```
+### DETAILS 
+```
 |-- RSG2prior/data/behavior
+```
  Each mat file contains behavioral data from all recording sessions, separately for animal H(Haydn) and G(Gershwin). Important variables are as below:
 	- T: sample time interval (t_s) [# trials x 1]
 	- t: production time interval (t_p) [# trials x 1]
@@ -27,8 +27,9 @@ This folder has neural data, spike times, for each session.
 	- idOut: index to indicate each trial is outlier or not (e.g., aborting trials). 1 if a trial is outlier, 0 otherwise [# trials x 1] 
 	- sessId: index for session [# trials x 1]
 
-
+```
 |-- RSG2prior/data/neurons/raw_spike_data
+```
  All data in 2016 (16XXXX.mat) is from animal H(Haydn), those in 2017 (17XXXX) is from G(Gershwin). G's data collected in 2017/8 included noSet trials.
 
  - sp [# spikes x 1]: spike times in clock of the blackrock recording system. Given its sample frequency of 30000Hz, this can be converted into spike times in [sec] by dividing it with 30000 (to be compatible with tInfo's time.
@@ -63,14 +64,16 @@ This folder has neural data, spike times, for each session.
 	12) reward, 
 	13) idNoSet (1 if noSet trials; only for G), 
 	14) idSuccessNoSet (1 if not aborting noSet trials)
-
+```
 |-- RSG2prior/data/neurons/processed_data
-
+```
 - PSTH_periSet_G_full_SUMU.mat
 - PSTH_periSet_G_full_SUMU.mat
-
+```
 |-- RSG2prior/data/neurons/PSTH
+```
  This folder has Peri-Stimulus Time Histogram (PSTH) of a representative cell (YYMMDD_ID). Due to github storage limit, all cells' plot cannot be uploaded. Inside the plot, each panel shows firing rates around task events, sorted by behaviorally relevant trial types.
-
+```
 |-- RSG2prior/data/neurons/raster
+```
  This folder has raster plot of a representative cell (YYMMDD_ID). Due to github storage limit, all cells' plot cannot be uploaded. Inside the plot, each panel shows spikes around task events. Note that raster is not sorted by behaviorally relevant trial types.
