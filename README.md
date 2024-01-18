@@ -116,7 +116,7 @@ RSG_twoPrior_handEye.xml is an old MWorks code; caution: it is not cleaned up an
 ```
 |-- analysis
 ```
-: analysis code used to process data and plot figures; caution: it is not cleaned up.
+analysis code used to process data and plot figures; caution: it is not cleaned up.
 |--
 #### GPFA (Gaussian-Process Factor Analysis; Yu et al., J Neurophysiol, 2009)
 
