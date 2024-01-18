@@ -117,7 +117,8 @@ RSG_twoPrior_handEye.xml is an old MWorks code; caution: it is not cleaned up an
 |-- analysis
 ```
 analysis code used to process data and plot figures; caution: it is not cleaned up.
-```
+
+
 #### GPFA (Gaussian-Process Factor Analysis; Yu et al., J Neurophysiol, 2009)
 
 GPFA was run for representative sessions (animal H's 161218; animal G's 170511) using [DataHigh](https://github.com/BenjoCowley/DataHigh) toolbox. Used data is in RSG2prior/data/neurons/processed_data/[PSTH_161218_ReadySetGo_single_trial.mat](https://github.com/hansem/RSG2prior/blob/main/data/neurons/processed_data/PSTH_161218_ReadySetGo_single_trial.mat) and in the format compatible with DataHigh toolbox. Briefly, the MATLAB file has a structural array, 'D', where each element is from single trials and its data field has a 2D matrix, 53 neurons x variable-size time bins (1ms). Each bin has 1 if there is a spike, 0 otherwise. EpochStarts field indicates when Ready and Set stimulus is given and condition field is each trials' condition identifier, indicating prior (short/long), ts (from 480 to 1200), modality (eye/hand), direction (left/right). If you are not using DataHigh toolbox (e.g., for scripting with GPFA's original [Matlab code](https://users.ece.cmu.edu/~byronyu/software/gpfa0203.tgz)), you can always generate your own data format from raw spike train data in RSG2prior/data/neurons/raw_spike_data.
